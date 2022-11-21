@@ -1,7 +1,17 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
   "rules": {
-    "no-unused-vars": "error",
     "no-console": "warn",
     "quotes": ["error", "single"],
     "jsx-quotes": ["error", "prefer-double"],
@@ -14,6 +24,9 @@
       "newlines-between": "always-and-inside-groups"
     }],
     "object-curly-spacing": ["warn", "always"],
-    "template-curly-spacing": ["warn", "always"]
-  }
+    "template-curly-spacing": ["warn", "always"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "plugins": ["@typescript-eslint"]
 }
