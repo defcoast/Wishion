@@ -1,0 +1,26 @@
+.WishList {
+  margin-top:       12px;
+  display:          flex;
+  flex-flow:        column nowrap;
+  gap:              8px 0;
+  background-color: rgba(244, 242, 242, 0.78);
+  padding: 15px;
+  border-radius: 16px;
+  min-width: 360px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    justify-content: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__description {
+
+  }
+}

@@ -1,0 +1,26 @@
+.WishEditor {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-flow: column nowrap;
+
+  &__form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px 0;
+  }
+
+  &__input {
+    border: none;
+    font-size: 20px;
+
+    &:first-child {
+      font-size: 36px;
+    }
+
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
